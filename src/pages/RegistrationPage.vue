@@ -112,7 +112,7 @@ const validateField = (field) => {
   if (field === 'password') {
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8}$/
     if (!form.password || !passwordRegex.test(form.password)) {
-      errors.password = 'Пароль от 8 символов, должен содержать заглавные, строчные буквы, цифры и спецсимволы.'
+      errors.password = 'Пароль 8 символов, должен содержать заглавные, строчные буквы, цифры и спецсимволы.'
     }
   }
 
